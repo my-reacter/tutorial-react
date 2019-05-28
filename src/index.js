@@ -24,7 +24,9 @@ import './index.css';
   
     render() {
       return (
-        <div>
+        <div> 
+          <h1>Hello, world!</h1>
+          <h2>It is {new Date().toLocaleTimeString()}.</h2>
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}
@@ -91,7 +93,7 @@ import './index.css';
       const moves = history.map((step, move) => {
         const desc = move ?
           '返回到 #' + move :
-          '返回游戏开始！';
+          '游戏开始！';
         return (
           <li key={move}>
             <button onClick={() => this.jumpTo(move)}>{desc}</button>
