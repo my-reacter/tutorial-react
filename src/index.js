@@ -25,8 +25,7 @@ import './index.css';
     render() {
       return (
         <div> 
-          <h1>Hello, world!</h1>
-          <h2>It is {new Date().toLocaleTimeString()}.</h2>
+          <h1># 字游戏</h1>
           <div className="board-row">
             {this.renderSquare(0)}
             {this.renderSquare(1)}
