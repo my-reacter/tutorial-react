@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Button } from 'antd';
 import './index.css';
 
 
@@ -95,7 +96,7 @@ import './index.css';
           '游戏开始！';
         return (
           <li key={move}>
-            <button onClick={() => this.jumpTo(move)}>{desc}</button>
+            <Button type="primary" onClick={() => this.jumpTo(move)}>{desc}</Button>
           </li>
         );
       });
